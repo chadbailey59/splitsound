@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+require "splitsound"
+
+path = ARGV.shift
+
+if path == nil
+  puts "Include the path to a video file to process as the first argument."
+else
+  Splitsound.run(path)
+end
