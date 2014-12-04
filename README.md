@@ -1,29 +1,9 @@
 # Splitsound
 
-TODO: Write a gem description
+Split a video (such as a live concert) into multiple audio files based on start and end times. Splitsound will set metadata in the files and import them into iTunes as well.
 
-## Installation
-
-Add this line to your application's Gemfile:
-
-    gem 'splitsound'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install splitsound
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Contributing
-
-1. Fork it ( https://github.com/[my-github-username]/splitsound/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+1. `gem install splitsound`
+2. Download a video with `youtube-dl` or something
+3. `splitsound video.mp4` will create a config file.
+4. Edit the config file with the metadata you want.
+5. `splitsound video.mp4` again to split the video.
