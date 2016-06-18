@@ -11,7 +11,7 @@ module Splitsound
     if @video_file.configured?
       puts "Processing video"
       @video_file.check_for_default_config!
-      @video_file.add_to_itunes!
+      # @video_file.add_to_itunes!
       @video_file.split!
     else
       puts "Writing config file"

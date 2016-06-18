@@ -81,7 +81,7 @@ module Splitsound
       puts movie.audio_stream
       config["Tracks"].each do |track_name, track_info|
         opts = config["Info"].merge(track_info).merge({"Title" => track_name})
-        AudioFile.new(filepath, opts).create!.add_to_itunes!
+        AudioFile.new(filepath, opts).create!
       end
     end
   end
